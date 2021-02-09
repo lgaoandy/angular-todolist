@@ -1,0 +1,21 @@
+h3 {
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 15px;
+}
+
+.list-container {
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    font-family: 'ubuntu light';
+
+    .task {
+        background-color: gainsboro;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+}

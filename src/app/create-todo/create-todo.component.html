@@ -1,0 +1,14 @@
+<div class="main-container">
+    <h3 class="title">
+        Create New Task
+    </h3>
+    <input type="text" [(ngModel)]="task" />
+
+    <div class="task-details">
+        <input type="date" [(ngModel)]="deadline" />
+    </div>
+
+    <button (click)="addTask()">
+        create
+    </button>
+</div>
