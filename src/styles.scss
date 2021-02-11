@@ -20,8 +20,15 @@
     padding: 0;
 }
 
+body {
+    background-repeat: no-repeat;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.3), rgb(255, 255, 255, 0.5)), url('./assets/images/workspace.jpg');
+    background-size: cover;
+    height: 100vh;
+}
+
 .title {
     font-family: 'lobster';
     font-size: 35px;
-    color: grey;
+    color: black;
 }

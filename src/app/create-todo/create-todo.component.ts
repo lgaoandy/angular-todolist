@@ -10,6 +10,7 @@ import { TasklistService } from '../tasklist.service';
 export class CreateTodoComponent implements OnInit {
   task: String;
   deadline: Date;
+  revealDetails: Boolean = false;
 
   constructor(private tasklistService: TasklistService) { }
 
@@ -26,5 +27,15 @@ export class CreateTodoComponent implements OnInit {
   clearTaskInput(): void {
     this.task = '';
     this.deadline = null;
+    this.revealDetails = false;
+  }
+
+  revealDetail(): void {
+    if (this.task && this.revealDetails === false){
+      this.revealDetails = true;
+    }
+    else if (!this.task && this.revealDetails === true){
+      this.revealDetails = false;
+    }
   }
 }

@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Task } from './tasks';
 import { CalculateService } from './calculate.service';
-import { moveMessagePortToContext } from 'worker_threads';
 
 @Injectable({
   providedIn: 'root'

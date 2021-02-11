@@ -1,13 +1,24 @@
 .main-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    
+    padding: 15px;
+    background-color: lightgray;
+    border-radius: 5px;
 
     h3 {
         margin: 15px 0;
     }
 
-    input, .date-input {
+    input {
         font-family: "ubuntu light";
         font-size: 25px;
         padding: 5px;
@@ -21,4 +32,34 @@
         text-transform: uppercase;
         padding: 3px 15px;
     }
+}
+
+.task-details {
+    margin-top: 15px;
+    display: none;
+    opacity: 0;
+
+    label {
+        font-family: 'ubuntu';
+        font-weight: 1000;
+        text-transform: uppercase;
+        padding: 5px 0;
+
+        span {
+            font-weight: 300;
+            color: grey;
+        }
+    }
+
+    &.reveal{
+        display: flex;
+        flex-direction: column;
+        animation: fade 500ms ease-in-out;
+        opacity: 100;
+    }
+}
+
+@keyframes fade {
+    from {opacity: 0;}
+    to {opacity: 100;}
 }
